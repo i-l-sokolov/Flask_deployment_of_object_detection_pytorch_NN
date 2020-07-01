@@ -1,0 +1,26 @@
+@app.route('/news')
+def news():
+    return "Some data"
+
+
+@app.route('/<int:id>/news')
+def news2(id):
+    return f"ID is {id}"
+
+
+@app.route('/admin-<string:login>/<int:id>')
+def news3(login, id):
+    return f"Id is {id} and login is {login}"
+____________________________
+@app.route('/user/<string:login>')
+def user_login(login):
+    return render_template("tasks/task.html", NAME=login)
+
+
+@app.route('/contacti')
+def contacti():
+    return render_template("tasks/contacti.html")
+------------
+<a class="p-2 text-dark" href="/contacti">Contacts</a>
+_______________________________________
+
