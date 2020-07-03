@@ -1,0 +1,1 @@
+txt file for img folder, because git delete empty folders
