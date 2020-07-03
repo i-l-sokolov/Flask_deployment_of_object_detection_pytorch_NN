@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+Picture
+{% endblock %}
+
+{% block body %}
+    <h2>Detection results</h2>
+    <img src={{PATH_TO_RESULTS}}>
+    <h2>Original picture</h2>
+    <img src={{PATH_TO_SOURCE}}>
+
+{% endblock %}

@@ -5,8 +5,9 @@ Picture
 {% endblock %}
 
 {% block body %}
-    <form method="POST" enctype=multipart/form-data action="{{ url_for('upload') }}">
-        <input type=file name=photo>
+    <form method="POST" enctype=multipart/form-data action="#">
+        <input type=file name=photo id="photo">
+        <label for="photo"><span>Нажмите кнопку "Обзор", выберете картинку в формате JPG/JPEG и нажимите "Подача запроса"</span></label>
         <input type="submit">
     </form>
 {% endblock %}
