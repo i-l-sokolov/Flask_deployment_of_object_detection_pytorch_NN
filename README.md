@@ -15,6 +15,7 @@ NN detection of objects
   ![The demo of NN detection](screens/detection_screen.png)
 Developed web interface for NN usage
  ![web_interface](screens/web_screen.JPG)
+
 Video with demo could be found screens/demo_flask.mp4
   [demo.mp4](screens%2Fdemo_flask.mp4)
 
