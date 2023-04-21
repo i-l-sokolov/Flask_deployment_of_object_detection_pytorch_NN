@@ -1,3 +1,8 @@
 body {
-    background: red;
+  background-color: #f0f0f0; /* set the background color */
+  font-family: Arial, sans-serif; /* set the font family */
+  font-size: 16px; /* set the font size */
+  line-height: 1.5; /* set the line height */
+  margin: 0; /* remove margin */
+  padding: 0; /* remove padding */
 }

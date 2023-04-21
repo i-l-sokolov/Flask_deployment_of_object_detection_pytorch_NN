@@ -1,13 +1,22 @@
 {% extends "base.html" %}
 
 {% block title %}
-Picture
+    Picture
 {% endblock %}
 
 {% block body %}
-    <form method="POST" enctype=multipart/form-data action="#">
-        <input type=file name=photo id="photo">
-        <label for="photo"><span>Нажмите кнопку "Обзор", выберете картинку в формате JPG/JPEG и нажимите "Подача запроса"</span></label>
-        <input type="submit">
-    </form>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-6">
+                <form class="card p-4" method="POST" enctype="multipart/form-data" action="#">
+                    <h4 class="mb-4">Upload an Image</h4>
+                    <div class="form-group">
+                        <label for="photo">Choose a JPG/JPEG Image</label>
+                        <input type="file" class="form-control-file" name="photo" id="photo">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}

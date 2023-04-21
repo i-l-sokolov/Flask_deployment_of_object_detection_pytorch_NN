@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 
 {% block title %}
-    Главная страница
+    Main Page
 {% endblock %}
 
 {% block body %}
-    <h2>For uploading picture push button UPLOAD in left-up corner</h2>
-    <div></div>
-    <img src="static/img/r-cnn-object-detection-e1543498760463.png"></img>
-
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-8 text-center">
+                <h1 class="main-title">Welcome to the Object Detection App</h1>
+                <img class="main-image img-fluid mt-4" src="{{ url_for('static', filename='img/r-cnn-object-detection-e1543498760463.png') }}" alt="Object Detection Example">
+                <p class="mt-4">To upload an image, click the UPLOAD button in the upper left corner.</p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

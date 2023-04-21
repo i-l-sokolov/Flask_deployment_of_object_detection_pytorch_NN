@@ -1,13 +1,34 @@
 {% extends "base.html" %}
 
 {% block title %}
-Picture
+    Picture
 {% endblock %}
 
 {% block body %}
-    <h2>Detection results</h2>
-    <img src={{PATH_TO_RESULTS}}>
-    <h2>Original picture</h2>
-    <img src={{PATH_TO_SOURCE}}>
-
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-sm-6">
+                <form class="card p-4" method="POST" enctype="multipart/form-data" action="#">
+                    <h4 class="mb-4">Upload an Image</h4>
+                    <div class="form-group">
+                        <label for="photo">Choose a JPG/JPEG Image</label>
+                        <input type="file" class="form-control-file" name="photo" id="photo">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <h2 class="mt-5 mb-3 text-center">Detection results</h2>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-6 d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="{{ PATH_TO_RESULTS }}">
+        </div>
+    </div>
+    <h2 class="mt-5 mb-3 text-center">Original picture</h2>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-6 d-flex justify-content-center align-items-center">
+            <img class="img-fluid" src="{{ PATH_TO_SOURCE }}">
+        </div>
+    </div>
 {% endblock %}
