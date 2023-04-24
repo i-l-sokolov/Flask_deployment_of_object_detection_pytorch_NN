@@ -16,7 +16,7 @@ NN detection of objects
 Developed web interface for NN usage
  ![web_interface](screens/web_screen.JPG)
 
-GIF with demo could be found by [link](screens/demo_flask.gif)
+GIF with demo could be found by [link](screens/demo_flask_cropped.gif)
 
 ## Usage
 Activate the conda environment:
